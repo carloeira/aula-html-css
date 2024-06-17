@@ -18,13 +18,29 @@
             <p>Esta é uma demonstração <span id="highlight">tag spam</span> de textos</p>
         </section>
         <section>
-            <h2>Listas</h2>
-            <ol>
-                <li>teste 1</li>
-                <li>teste 2</li>
-                <li>teste 3</li>
-                <li>teste 4</li>
-            </ol>
+            <div>
+                <h2>Listas</h2>
+                <div class="flex-container-start">
+                    <div>
+                        <h5>ordenada</h5>
+                        <ol>
+                            <li>teste 1</li>
+                            <li>teste 2</li>
+                            <li>teste 3</li>
+                            <li>teste 4</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h5>não ordenada</h5>
+                        <ul>
+                            <li>Teste 1</li>
+                            <li>Teste 2</li>
+                            <li>Teste 3</li>
+                            <li>Teste 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <table>
@@ -54,7 +70,7 @@
             <h2>Botões e Links</h2>
             <a href="#" class="button">Botão Estilizado</a>
         </section>
-        
+
         <section>
             <h2>Layout Flexbox</h2>
             <div class="flex-container">
@@ -63,6 +79,71 @@
                 <div class="flex-item">Item Flex 3</div>
             </div>
         </section>
+        <section>
+            <h2>Forms e inputs</h2>
+            <div class="card-body">
+                <h2>Formulário de login</h2>
+                <form method="post" class="form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@gt02.com.br" required>
+                    </div>
+                    <div class="form-group">
+                        <a class="button" type="submit">Enviar</a>
+                    </div>
+                </form>
+
+                <h2>Input radio</h2>
+                <form action="post">
+                    <div class="form-group">
+                        <input type="radio" id="opcao1" name="opcao" value="opcao1" />
+                        <label for="opcao1">Opção 1</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="opcao2" name="opcao" value="opcao2" />
+                        <label for="opcao2">Opção 2</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="opcao2" name="opcao" value="opcao2" />
+                        <label for="opcao2">Opção 3</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="opcao2" name="opcao" value="opcao2" />
+                        <label for="opcao2">Opção 4</label>
+                    </div>
+                </form>
+
+                <h2>Input de cores</h2>
+                <form action="post">
+                    <div class="form-group">
+                        <label for="cor">Escolha uma cor:</label>
+                        <input type="color" id="cor" name="cor" value="#FF0000" />
+                    </div>
+                </form>
+
+                <h2>Input de controle de faixa</h2>
+                <form action="post">
+                    <label for="volume">Volume:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" value="50" />
+                </form>
+
+                <h2>Input de seleção de arquivos</h2>
+                <form action="post">
+                    <div class="form-group">
+                        <label for="arquivo">Escolha um arquivo:</label>
+                        <input type="file" id="arquivo" name="arquivo" accept=".pdf,.docx" />
+                    </div>
+                </form>
+
+            </div>
+            <div class="card-body">
+            </div>
+        </section>
+
     </div>
 </body>
 

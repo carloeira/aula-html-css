@@ -14,7 +14,12 @@ header {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 1rem;
 }
 
@@ -37,7 +42,7 @@ p {
     background-color: rebeccapurple;
     color: white;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: background-color 0.3s;
 }
 
@@ -45,7 +50,8 @@ p {
     background-color: rgb(45, 13, 78);
 }
 
-ul, ol {
+ul,
+ol {
     margin-bottom: 1rem;
 }
 
@@ -55,11 +61,14 @@ table {
     margin-bottom: 1rem;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 0.5rem;
     text-align: left;
 }
@@ -80,6 +89,12 @@ th {
     margin-bottom: 1rem;
 }
 
+
+.flex-container-start {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
 .flex-item {
     background-color: #007BFF;
     color: white;
@@ -88,4 +103,56 @@ th {
     text-align: center;
     flex: 1;
     margin: 0.5rem;
+}
+
+form {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 97%;
+}
+
+.card-body h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: auto;
+    font-size: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
 }
